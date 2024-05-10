@@ -77,18 +77,7 @@ function Navbar() {
                 Vehicle Models
               </Link>
             </li>
-            <li>
-              {" "}
-              <Link className="testi-link" to="/testimonials">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="team-link" to="/team">
-                Our Team
-              </Link>
-            </li>
+         
             <li>
               {" "}
               <Link className="contact-link" to="/contact">

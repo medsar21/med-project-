@@ -6,38 +6,29 @@ function Footer() {
           <div className="footer-content">
             <ul className="footer-content__1">
               <li>
-                <span>CAR</span> Rental
+                <span>EL-KAHT</span> Rent Car
               </li>
               <li>
                 We offers a big range of vehicles for all your driving needs. We
                 have the perfect car to meet your needs.
               </li>
               <li>
-                <a href="tel:123456789">
-                  <i className="fa-solid fa-phone"></i> &nbsp; (123) -456-789
+                <a href="tel:+212 661-292787">
+                  <i className="fa-solid fa-phone"></i> &nbsp; +212 661-292787
                 </a>
               </li>
 
               <li>
                 <a
                   href="mailto: 
-                carrental@gmail.com"
+                  elkaht.rent.car@gmail.com"
                 >
                   <i className="fa-solid fa-envelope"></i>
-                  &nbsp; carrental@xyz.com
+                  &nbsp;elkaht.rent.car@gmail.com
                 </a>
               </li>
 
-              <li>
-                <a
-                  style={{ fontSize: "14px" }}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://devrahuls.vercel.app/"
-                >
-                  Design with ❤️ by Rahul
-                </a>
-              </li>
+              
             </ul>
 
             <ul className="footer-content__2">
