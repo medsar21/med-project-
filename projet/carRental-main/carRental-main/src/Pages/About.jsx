@@ -13,40 +13,38 @@ function About() {
         <HeroPages name="About" />
         <div className="container">
           <div className="about-main">
-            <img
+            <img 
               className="about-main__img"
               src={AboutMain}
               alt="car-renting"
             />
             <div className="about-main__text">
-              <h3>About Company</h3>
+              <h3>About EL-KAHT Rent Car</h3>
               <h2>You start the engine and your adventure begins</h2>
               <p>
-                Certain but she but shyness why cottage. Guy the put instrument
-                sir entreaties affronting. Pretended exquisite see cordially the
-                you. Weeks quiet do vexed or whose. Motionless if no to
-                affronting imprudence no precaution. My indulged as disposal
-                strongly attended.
+              EL-KAHT Rent Car, located at Hay Boujdad Nr 396 Moklata Kouilma - Tetouan. Specializing in 
+              self-drive car rentals, our CEO, Mohamed El Kaht, leads our team with a passion for 
+              exceptional service. Explore our offerings and discover a seamless journey with us
               </p>
               <div className="about-main__text__icons">
                 <div className="about-main__text__icons__box">
                   <img src={Box1} alt="car-icon" />
                   <span>
-                    <h4>20</h4>
+                    <h4>07</h4>
                     <p>Car Types</p>
                   </span>
                 </div>
                 <div className="about-main__text__icons__box">
                   <img src={Box2} alt="car-icon" />
                   <span>
-                    <h4>85</h4>
+                    <h4>08</h4>
                     <p>Rental Outlets</p>
                   </span>
                 </div>
                 <div className="about-main__text__icons__box">
                   <img src={Box3} alt="car-icon" className="last-fk" />
                   <span>
-                    <h4>75</h4>
+                    <h4>05</h4>
                     <p>Repair Shop</p>
                   </span>
                 </div>
@@ -63,7 +61,7 @@ function About() {
             <h2>Book a car by getting in touch with us</h2>
             <span>
               <i className="fa-solid fa-phone"></i>
-              <h3>(123) 456-7869</h3>
+              <h3>+212 661-292787</h3>
             </span>
           </div>
         </div>

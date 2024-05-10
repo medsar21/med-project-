@@ -58,6 +58,7 @@
   gap: 5rem;
   max-width: 90rem;
   align-items: center;
+  
 
   @media (max-width: 960px) {
     display: grid;
@@ -215,4 +216,7 @@
     color: $text-orange;
     white-space: nowrap;
   }
+}
+.about-main__img {
+border-radius: 72px;
 }

@@ -73,8 +73,6 @@ function Navbar() {
                 Vehicle Models
               </Link>
             </li>
-           
-           
             <li>
               {" "}
               <Link className="contact-link" to="/contact">
