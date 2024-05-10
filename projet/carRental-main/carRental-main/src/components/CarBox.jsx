@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-function CarBox({ data, carID }) {
+function CarBox({ data, id }) {
   const [carLoad, setCarLoad] = useState(true);
   return (
     <>
-      {data[carID].map((car, id) => (
+      {data.map((car, id) => (
         <div key={id} className="box-cars">
           {/* car */}
           <div className="pick-car">

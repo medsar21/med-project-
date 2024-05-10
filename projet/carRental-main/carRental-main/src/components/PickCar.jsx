@@ -3,8 +3,8 @@ import CarBox from "./CarBox";
 import { CAR_DATA } from "./CarData";
 
 function PickCar() {
-  const [active, setActive] = useState("SecondCar");
-  const [colorBtn, setColorBtn] = useState("btn1");
+  const [active, setActive] = useState(null);
+  const [colorBtn, setColorBtn] = useState("");
 
   const btnID = (id) => {
     setColorBtn(colorBtn === id ? "" : id);
@@ -30,82 +30,23 @@ function PickCar() {
             <div className="pick-container__car-content">
               {/* pick car */}
               <div className="pick-box">
-                <button
-                  className={`${coloringButton("btn1")}`}
-                  onClick={() => {
-                    setActive("SecondCar");
-                    btnID("btn1");
-                  }}
-                >
-                  Renault Clio 5
-                </button>
-                <button
-                  className={`${coloringButton("btn2")}`}
-                  id="btn2"
-                  onClick={() => {
-                    setActive("FirstCar");
-                    btnID("btn2");
-                  }}
-                >
-                  Opel Corsa
-                </button>
-                <button
-                  className={`${coloringButton("btn3")}`}
-                  id="btn3"
-                  onClick={() => {
-                    setActive("ThirdCar");
-                    btnID("btn3");
-                  }}
-                >
-                  Dacia stepway
-                </button>
-                <button
-                  className={`${coloringButton("btn4")}`}
-                  id="btn4"
-                  onClick={() => {
-                    setActive("FourthCar");
-                    btnID("btn4");
-                  }}
-                >
-                  renault clio 4
-                </button>
-                <button
-                  className={`${coloringButton("btn5")}`}
-                  id="btn5"
-                  onClick={() => {
-                    setActive("FifthCar");
-                    btnID("btn5");
-                  }}
-                >
-                  puegot 208
-                </button>
-                <button
-                  className={`${coloringButton("btn6")}`}
-                  id="btn6"
-                  onClick={() => {
-                    setActive("SixthCar");
-                    btnID("btn6");
-                  }}
-                >
-                  Ford fiesta 
-                </button>
-                <button
-                  className={`${coloringButton("btn1")}`}
-                  onClick={() => {
-                    setActive("SecondCar");
-                    btnID("btn1");
-                  }}
-                >
-                 Dacia logan 
-                </button>
+                {CAR_DATA.map((cardData) => {
+                  return (
+                    <button
+                      key={cardData[0].id}
+                      className={`${coloringButton(`btn${cardData[0].id}`)}`}
+                      onClick={() => {
+                        setActive(cardData[0].name);
+                        btnID(`btn${cardData[0].id}`);
+                      }}
+                    >
+                      {cardData[0].name}
+                    </button>
+                  );
+                })}
               </div>
 
-              {active === "FirstCar" && <CarBox data={CAR_DATA} carID={0} />}
-              {active === "SecondCar" && <CarBox data={CAR_DATA} carID={1} />}
-              {active === "ThirdCar" && <CarBox data={CAR_DATA} carID={2} />}
-              {active === "FourthCar" && <CarBox data={CAR_DATA} carID={3} />}
-              {active === "FifthCar" && <CarBox data={CAR_DATA} carID={4} />}
-              {active === "SixthCar" && <CarBox data={CAR_DATA} carID={5} />}
+              {active && <CarBox data={CAR_DATA.find(carData => carData[0].name === active)} />}
             </div>
           </div>
         </div>
